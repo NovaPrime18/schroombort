@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name buttonbox2-rescue)(type Legacy)(uri ${KIPRJMOD}/buttonbox2-rescue.lib)(options "")(descr ""))
+  (lib (name Schroom)(type Legacy)(uri ${KIPRJMOD}/Schroom.lib)(options "")(descr ""))
+)
