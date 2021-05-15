@@ -62,12 +62,12 @@ $EndComp
 $Comp
 L Device:Battery BT2
 U 1 1 60BFF57C
-P 6650 2900
-F 0 "BT2" H 6758 2946 50  0000 L CNN
-F 1 "Battery" H 6758 2855 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 6650 2960 50  0001 C CNN
-F 3 "~" V 6650 2960 50  0001 C CNN
-	1    6650 2900
+P 6800 3000
+F 0 "BT2" H 6908 3046 50  0000 L CNN
+F 1 "Battery" H 6908 2955 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 6800 3060 50  0001 C CNN
+F 3 "~" V 6800 3060 50  0001 C CNN
+	1    6800 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -156,49 +156,49 @@ F 3 "" H 4500 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 3100 6650 3100
+	6700 3200 6800 3200
 $Comp
 L power:GND #PWR028
 U 1 1 60C0B9D9
-P 6650 3100
-F 0 "#PWR028" H 6650 2850 50  0001 C CNN
-F 1 "GND" H 6655 2927 50  0000 C CNN
-F 2 "" H 6650 3100 50  0001 C CNN
-F 3 "" H 6650 3100 50  0001 C CNN
-	1    6650 3100
+P 6800 3200
+F 0 "#PWR028" H 6800 2950 50  0001 C CNN
+F 1 "GND" H 6805 3027 50  0000 C CNN
+F 2 "" H 6800 3200 50  0001 C CNN
+F 3 "" H 6800 3200 50  0001 C CNN
+	1    6800 3200
 	1    0    0    -1  
 $EndComp
-Connection ~ 6650 3100
+Connection ~ 6800 3200
 Text GLabel 3350 1900 2    50   Input ~ 0
 BUS
-Text GLabel 7250 2600 1    50   Input ~ 0
+Text GLabel 7400 2700 1    50   Input ~ 0
 BUS
 $Comp
 L Device:R Rnor1
 U 1 1 60C0CFEE
-P 7250 2800
-F 0 "Rnor1" H 7320 2846 50  0000 L CNN
-F 1 "R" H 7320 2755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7180 2800 50  0001 C CNN
-F 3 "~" H 7250 2800 50  0001 C CNN
-	1    7250 2800
+P 7400 2900
+F 0 "Rnor1" H 7470 2946 50  0000 L CNN
+F 1 "R" H 7470 2855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7330 2900 50  0001 C CNN
+F 3 "~" H 7400 2900 50  0001 C CNN
+	1    7400 2900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R Rntc1
 U 1 1 60C0D8A7
-P 7100 3100
-F 0 "Rntc1" V 6893 3100 50  0000 C CNN
-F 1 "R" V 6984 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7030 3100 50  0001 C CNN
-F 3 "~" H 7100 3100 50  0001 C CNN
-	1    7100 3100
+P 7250 3200
+F 0 "Rntc1" V 7043 3200 50  0000 C CNN
+F 1 "R" V 7134 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7180 3200 50  0001 C CNN
+F 3 "~" H 7250 3200 50  0001 C CNN
+	1    7250 3200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7250 3100 7250 2950
+	7400 3200 7400 3050
 Wire Wire Line
-	7250 2650 7250 2600
+	7400 2750 7400 2700
 $Comp
 L Device:L L1
 U 1 1 60C0E70B
@@ -240,15 +240,13 @@ Text GLabel 3600 2600 2    50   Input ~ 0
 LX
 Text GLabel 3700 2750 2    50   Input ~ 0
 PGNDBAT
-Wire Wire Line
-	6050 2700 6650 2700
 Text GLabel 3600 2500 2    50   Input ~ 0
 BST
 Text GLabel 5550 2250 0    50   Input ~ 0
 BST
 Text GLabel 5600 2700 0    50   Input ~ 0
 LX
-Text GLabel 6550 3100 0    50   Input ~ 0
+Text GLabel 6700 3200 0    50   Input ~ 0
 PGNDBAT
 Wire Wire Line
 	5750 2700 5650 2700
@@ -316,7 +314,7 @@ Text GLabel 3600 2900 2    50   Input ~ 0
 BAT
 Text GLabel 3600 3000 2    50   Input ~ 0
 NTC
-Text GLabel 7250 3050 2    50   Input ~ 0
+Text GLabel 7400 3150 2    50   Input ~ 0
 NTC
 Wire Wire Line
 	2600 3100 2500 3100
@@ -472,7 +470,7 @@ F 3 "" H 5400 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 3100 6950 3100
+	6800 3200 7100 3200
 Wire Wire Line
 	3350 1900 3150 1900
 Wire Wire Line
@@ -484,40 +482,55 @@ Wire Wire Line
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J3
 U 1 1 610152FB
-P 1300 5350
-F 0 "J3" H 1407 6217 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 1407 6126 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11" H 1450 5350 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1450 5350 50  0001 C CNN
-	1    1300 5350
+P 1200 4400
+F 0 "J3" H 1307 5267 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1307 5176 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11" H 1350 4400 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1350 4400 50  0001 C CNN
+	1    1200 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 6250 1150 6250
+	1200 5300 1050 5300
 $Comp
 L power:GND #PWR053
 U 1 1 6101E2A9
-P 1150 6250
-F 0 "#PWR053" H 1150 6000 50  0001 C CNN
-F 1 "GND" H 1155 6077 50  0000 C CNN
-F 2 "" H 1150 6250 50  0001 C CNN
-F 3 "" H 1150 6250 50  0001 C CNN
-	1    1150 6250
+P 1050 5300
+F 0 "#PWR053" H 1050 5050 50  0001 C CNN
+F 1 "GND" H 1055 5127 50  0000 C CNN
+F 2 "" H 1050 5300 50  0001 C CNN
+F 3 "" H 1050 5300 50  0001 C CNN
+	1    1050 5300
 	1    0    0    -1  
 $EndComp
-Connection ~ 1150 6250
+Connection ~ 1050 5300
 Wire Wire Line
-	1150 6250 1000 6250
+	1050 5300 900  5300
 Text GLabel 1700 2150 0    50   Input ~ 0
 VIN
-Text GLabel 1900 4750 2    50   Input ~ 0
+Text GLabel 1800 3800 2    50   Input ~ 0
 VIN
 Wire Wire Line
-	1900 5250 1900 5350
+	1800 4300 1800 4400
 Wire Wire Line
-	1900 5450 1900 5550
-Text GLabel 1900 5300 2    50   Input ~ 0
+	1800 4500 1800 4600
+Text GLabel 1800 4350 2    50   Input ~ 0
 D-
-Text GLabel 1900 5500 2    50   Input ~ 0
+Text GLabel 1800 4550 2    50   Input ~ 0
 D+
+Wire Wire Line
+	6800 2800 6750 2800
+Wire Wire Line
+	6050 2700 6350 2700
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 60A4FBE3
+P 6550 2700
+F 0 "SW?" H 6550 2985 50  0000 C CNN
+F 1 "SW_SPDT" H 6550 2894 50  0000 C CNN
+F 2 "Hardware:SWINTCHFORBATTERY" H 6550 2700 50  0001 C CNN
+F 3 "~" H 6550 2700 50  0001 C CNN
+	1    6550 2700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
