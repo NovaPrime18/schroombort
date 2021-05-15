@@ -482,10 +482,10 @@ Wire Wire Line
 Wire Wire Line
 	1700 2150 2600 2150
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J?
+L Connector:USB_C_Receptacle_USB2.0 J3
 U 1 1 610152FB
 P 1300 5350
-F 0 "J?" H 1407 6217 50  0000 C CNN
+F 0 "J3" H 1407 6217 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1407 6126 50  0000 C CNN
 F 2 "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11" H 1450 5350 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1450 5350 50  0001 C CNN
@@ -495,10 +495,10 @@ $EndComp
 Wire Wire Line
 	1300 6250 1150 6250
 $Comp
-L power:GND #PWR?
+L power:GND #PWR053
 U 1 1 6101E2A9
 P 1150 6250
-F 0 "#PWR?" H 1150 6000 50  0001 C CNN
+F 0 "#PWR053" H 1150 6000 50  0001 C CNN
 F 1 "GND" H 1155 6077 50  0000 C CNN
 F 2 "" H 1150 6250 50  0001 C CNN
 F 3 "" H 1150 6250 50  0001 C CNN
