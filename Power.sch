@@ -255,7 +255,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 3100 4550 3000
 $Comp
-L ThommasSTUFF:LM4871-Custom_modules U?
+L buttonbox2-rescue:LM4871-Custom_modules-ThommasSTUFF U?
 U 1 1 5F3EC6A5
 P 3450 4150
 AR Path="/5F3EC6A5" Ref="U?"  Part="1" 

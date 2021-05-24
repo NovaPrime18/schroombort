@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ThommasSTUFF:PT6311-Custom_modules U?
+L buttonbox2-rescue:PT6311-Custom_modules-ThommasSTUFF U?
 U 1 1 5F3F0EEF
 P 4650 2250
 AR Path="/5F3F0EEF" Ref="U?"  Part="1" 
@@ -48,7 +48,7 @@ VEE
 Wire Wire Line
 	5350 2350 5400 2350
 $Comp
-L ThommasSTUFF:VFD_HNV-12SS62-custom_comps U?
+L buttonbox2-rescue:VFD_HNV-12SS62-custom_comps-ThommasSTUFF U?
 U 1 1 5F3F0F03
 P 7500 1700
 AR Path="/5F3F0F03" Ref="U?"  Part="1" 
@@ -264,109 +264,6 @@ Wire Wire Line
 Wire Wire Line
 	2400 3400 2400 3600
 Wire Wire Line
-	5700 5800 5800 5800
-$Comp
-L Device:R R41
-U 1 1 5F375184
-P 5800 6150
-F 0 "R41" H 5870 6196 50  0000 L CNN
-F 1 "10K" H 5870 6105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5730 6150 50  0001 C CNN
-F 3 "~" H 5800 6150 50  0001 C CNN
-	1    5800 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R43
-U 1 1 5F3751DC
-P 6100 6000
-F 0 "R43" H 6170 6046 50  0000 L CNN
-F 1 "10K" H 6170 5955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6030 6000 50  0001 C CNN
-F 3 "~" H 6100 6000 50  0001 C CNN
-	1    6100 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R45
-U 1 1 5F378B77
-P 6400 5850
-F 0 "R45" H 6470 5896 50  0000 L CNN
-F 1 "10K" H 6470 5805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6330 5850 50  0001 C CNN
-F 3 "~" H 6400 5850 50  0001 C CNN
-	1    6400 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R47
-U 1 1 5F37C669
-P 6700 5700
-F 0 "R47" H 6770 5746 50  0000 L CNN
-F 1 "10K" H 6770 5655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6630 5700 50  0001 C CNN
-F 3 "~" H 6700 5700 50  0001 C CNN
-	1    6700 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6700 5850 6700 6350
-Wire Wire Line
-	6700 6350 6400 6350
-Wire Wire Line
-	5800 6350 5800 6300
-Wire Wire Line
-	6100 6150 6100 6350
-Connection ~ 6100 6350
-Wire Wire Line
-	6100 6350 5800 6350
-Wire Wire Line
-	6400 6000 6400 6350
-Connection ~ 6400 6350
-Wire Wire Line
-	6400 6350 6250 6350
-Wire Wire Line
-	6250 6350 6250 6400
-Connection ~ 6250 6350
-Wire Wire Line
-	6250 6350 6100 6350
-$Comp
-L power:GND #PWR050
-U 1 1 5F38C73B
-P 6250 6400
-F 0 "#PWR050" H 6250 6150 50  0001 C CNN
-F 1 "GND" H 6255 6227 50  0000 C CNN
-F 2 "" H 6250 6400 50  0001 C CNN
-F 3 "" H 6250 6400 50  0001 C CNN
-	1    6250 6400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6700 5550 6700 5500
-Wire Wire Line
-	6400 5600 6400 5700
-Wire Wire Line
-	6100 5700 6100 5850
-Wire Wire Line
-	5800 5800 5800 6000
-Wire Wire Line
-	6700 5500 6750 5500
-Wire Wire Line
-	6400 5600 6450 5600
-Wire Wire Line
-	6100 5700 6150 5700
-Wire Wire Line
-	5800 5800 5850 5800
-Connection ~ 5800 5800
-Text HLabel 6750 5500 2    50   Input ~ 0
-K1
-Text HLabel 6450 5600 2    50   Input ~ 0
-K2
-Text HLabel 6150 5700 2    50   Input ~ 0
-K3
-Text HLabel 5850 5800 2    50   Input ~ 0
-K4
-Wire Wire Line
 	5350 2550 6500 2550
 Wire Wire Line
 	5350 2650 6800 2650
@@ -441,14 +338,9 @@ Wire Wire Line
 Wire Wire Line
 	4000 4500 3700 4500
 Wire Wire Line
-	3700 4700 3750 4700
-Wire Wire Line
 	3750 5100 4000 5100
 Wire Wire Line
-	3750 4700 3750 5100
-Wire Wire Line
 	3750 5100 3750 5200
-Connection ~ 3750 5100
 $Comp
 L power:GND #PWR047
 U 1 1 5F717727
@@ -525,67 +417,6 @@ $EndComp
 Connection ~ 2250 2800
 Wire Wire Line
 	1800 2800 2250 2800
-$Comp
-L Device:R R44
-U 1 1 5F318CEB
-P 6150 5600
-F 0 "R44" V 5943 5600 50  0000 C CNN
-F 1 "10K" V 6034 5600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6080 5600 50  0001 C CNN
-F 3 "~" H 6150 5600 50  0001 C CNN
-	1    6150 5600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6100 5700 6000 5700
-Connection ~ 6100 5700
-Wire Wire Line
-	6400 5600 6300 5600
-Connection ~ 6400 5600
-Wire Wire Line
-	6700 5500 6600 5500
-Connection ~ 6700 5500
-$Comp
-L Device:R R46
-U 1 1 5F33290D
-P 6450 5500
-F 0 "R46" V 6243 5500 50  0000 C CNN
-F 1 "10K" V 6334 5500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6380 5500 50  0001 C CNN
-F 3 "~" H 6450 5500 50  0001 C CNN
-	1    6450 5500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R42
-U 1 1 5F343E3D
-P 5850 5700
-F 0 "R42" V 5643 5700 50  0000 C CNN
-F 1 "10K" V 5734 5700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5780 5700 50  0001 C CNN
-F 3 "~" H 5850 5700 50  0001 C CNN
-	1    5850 5700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R40
-U 1 1 5F34C8CC
-P 5550 5800
-F 0 "R40" V 5343 5800 50  0000 C CNN
-F 1 "10K" V 5434 5800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5480 5800 50  0001 C CNN
-F 3 "~" H 5550 5800 50  0001 C CNN
-	1    5550 5800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5350 5500 6300 5500
-Wire Wire Line
-	6000 5600 5350 5600
-Wire Wire Line
-	5350 5700 5700 5700
-Wire Wire Line
-	5400 5800 5350 5800
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5F29C766

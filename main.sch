@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ThommasSTUFF:PT6311-Custom_modules U?
+L buttonbox2-rescue:PT6311-Custom_modules-ThommasSTUFF U?
 U 1 1 5F3F0EEF
 P 4650 2250
 AR Path="/5F3F0EEF" Ref="U?"  Part="1" 
@@ -48,7 +48,7 @@ VEE
 Wire Wire Line
 	5350 2350 5400 2350
 $Comp
-L ThommasSTUFF:VFD_HNV-12SS62-custom_comps U?
+L buttonbox2-rescue:VFD_HNV-12SS62-custom_comps-ThommasSTUFF U?
 U 1 1 5F3F0F03
 P 7500 1700
 AR Path="/5F3F0F03" Ref="U?"  Part="1" 

@@ -29,12 +29,12 @@ $EndComp
 $Comp
 L Device:C Cbs1
 U 1 1 60BFBF81
-P 5650 2400
-F 0 "Cbs1" H 5765 2446 50  0000 L CNN
-F 1 "C" H 5765 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5688 2250 50  0001 C CNN
-F 3 "~" H 5650 2400 50  0001 C CNN
-	1    5650 2400
+P 6150 1800
+F 0 "Cbs1" H 6265 1846 50  0000 L CNN
+F 1 "C" H 6265 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6188 1650 50  0001 C CNN
+F 3 "~" H 6150 1800 50  0001 C CNN
+	1    6150 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -62,12 +62,12 @@ $EndComp
 $Comp
 L Device:Battery BT2
 U 1 1 60BFF57C
-P 6800 3000
-F 0 "BT2" H 6908 3046 50  0000 L CNN
-F 1 "Battery" H 6908 2955 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 6800 3060 50  0001 C CNN
-F 3 "~" V 6800 3060 50  0001 C CNN
-	1    6800 3000
+P 7300 2400
+F 0 "BT2" H 7408 2446 50  0000 L CNN
+F 1 "Battery" H 7408 2355 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 7300 2460 50  0001 C CNN
+F 3 "~" V 7300 2460 50  0001 C CNN
+	1    7300 2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -156,58 +156,43 @@ F 3 "" H 4500 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 3200 6800 3200
+	7200 2600 7300 2600
 $Comp
 L power:GND #PWR028
 U 1 1 60C0B9D9
-P 6800 3200
-F 0 "#PWR028" H 6800 2950 50  0001 C CNN
-F 1 "GND" H 6805 3027 50  0000 C CNN
-F 2 "" H 6800 3200 50  0001 C CNN
-F 3 "" H 6800 3200 50  0001 C CNN
-	1    6800 3200
+P 7350 2650
+F 0 "#PWR028" H 7350 2400 50  0001 C CNN
+F 1 "GND" H 7355 2477 50  0000 C CNN
+F 2 "" H 7350 2650 50  0001 C CNN
+F 3 "" H 7350 2650 50  0001 C CNN
+	1    7350 2650
 	1    0    0    -1  
 $EndComp
-Connection ~ 6800 3200
+Connection ~ 7300 2600
 Text GLabel 3350 1900 2    50   Input ~ 0
-BUS
-Text GLabel 7400 2700 1    50   Input ~ 0
 BUS
 $Comp
 L Device:R Rnor1
 U 1 1 60C0CFEE
-P 7400 2900
-F 0 "Rnor1" H 7470 2946 50  0000 L CNN
-F 1 "R" H 7470 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7330 2900 50  0001 C CNN
-F 3 "~" H 7400 2900 50  0001 C CNN
-	1    7400 2900
+P 4650 2800
+F 0 "Rnor1" H 4720 2846 50  0000 L CNN
+F 1 "22K" H 4720 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4580 2800 50  0001 C CNN
+F 3 "~" H 4650 2800 50  0001 C CNN
+	1    4650 2800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R Rntc1
-U 1 1 60C0D8A7
-P 7250 3200
-F 0 "Rntc1" V 7043 3200 50  0000 C CNN
-F 1 "R" V 7134 3200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7180 3200 50  0001 C CNN
-F 3 "~" H 7250 3200 50  0001 C CNN
-	1    7250 3200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	7400 3200 7400 3050
-Wire Wire Line
-	7400 2750 7400 2700
+	4650 3100 4650 3000
 $Comp
 L Device:L L1
 U 1 1 60C0E70B
-P 5900 2700
-F 0 "L1" V 6090 2700 50  0000 C CNN
-F 1 "1.65uH" V 5999 2700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5900 2700 50  0001 C CNN
-F 3 "~" H 5900 2700 50  0001 C CNN
-	1    5900 2700
+P 6400 2100
+F 0 "L1" V 6590 2100 50  0000 C CNN
+F 1 "2.2uH" V 6499 2100 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6400 2100 50  0001 C CNN
+F 3 "~" H 6400 2100 50  0001 C CNN
+	1    6400 2100
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -242,50 +227,50 @@ Text GLabel 3700 2750 2    50   Input ~ 0
 PGNDBAT
 Text GLabel 3600 2500 2    50   Input ~ 0
 BST
-Text GLabel 5550 2250 0    50   Input ~ 0
+Text GLabel 6050 1650 0    50   Input ~ 0
 BST
-Text GLabel 5600 2700 0    50   Input ~ 0
+Text GLabel 6100 2050 0    50   Input ~ 0
 LX
-Text GLabel 6700 3200 0    50   Input ~ 0
+Text GLabel 7200 2600 0    50   Input ~ 0
 PGNDBAT
 Wire Wire Line
-	5750 2700 5650 2700
-Connection ~ 5650 2700
+	6250 2100 6150 2100
+Connection ~ 6150 2100
 Wire Wire Line
-	5650 2700 5600 2700
+	6150 2050 6100 2050
 Wire Wire Line
-	5550 2250 5650 2250
+	6050 1650 6150 1650
 $Comp
 L Device:R Rsnubber1
 U 1 1 60C19527
-P 5650 2850
-F 0 "Rsnubber1" H 5580 2804 50  0000 R CNN
-F 1 "R" H 5580 2895 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5580 2850 50  0001 C CNN
-F 3 "~" H 5650 2850 50  0001 C CNN
-	1    5650 2850
+P 6150 2250
+F 0 "Rsnubber1" H 6080 2204 50  0000 R CNN
+F 1 "R" H 6080 2295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6080 2250 50  0001 C CNN
+F 3 "~" H 6150 2250 50  0001 C CNN
+	1    6150 2250
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C Csnubber1
 U 1 1 60C1A249
-P 5650 3150
-F 0 "Csnubber1" H 5765 3196 50  0000 L CNN
-F 1 "C" H 5765 3105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5688 3000 50  0001 C CNN
-F 3 "~" H 5650 3150 50  0001 C CNN
-	1    5650 3150
+P 6150 2550
+F 0 "Csnubber1" H 6265 2596 50  0000 L CNN
+F 1 "C" H 6265 2505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6188 2400 50  0001 C CNN
+F 3 "~" H 6150 2550 50  0001 C CNN
+	1    6150 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR027
 U 1 1 60C1A747
-P 5650 3300
-F 0 "#PWR027" H 5650 3050 50  0001 C CNN
-F 1 "GND" H 5655 3127 50  0000 C CNN
-F 2 "" H 5650 3300 50  0001 C CNN
-F 3 "" H 5650 3300 50  0001 C CNN
-	1    5650 3300
+P 6150 2750
+F 0 "#PWR027" H 6150 2500 50  0001 C CNN
+F 1 "GND" H 6155 2577 50  0000 C CNN
+F 2 "" H 6150 2750 50  0001 C CNN
+F 3 "" H 6150 2750 50  0001 C CNN
+	1    6150 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -308,14 +293,10 @@ Text GLabel 2600 2250 0    50   Input ~ 0
 SIN
 Text GLabel 4100 3100 2    50   Input ~ 0
 SIN
-Text GLabel 6250 2700 3    50   Input ~ 0
+Text GLabel 6750 2100 3    50   Input ~ 0
 BAT
 Text GLabel 3600 2900 2    50   Input ~ 0
 BAT
-Text GLabel 3600 3000 2    50   Input ~ 0
-NTC
-Text GLabel 7400 3150 2    50   Input ~ 0
-NTC
 Wire Wire Line
 	2600 3100 2500 3100
 Wire Wire Line
@@ -455,7 +436,7 @@ Wire Wire Line
 	4850 2150 4650 2150
 Connection ~ 4650 2150
 Wire Wire Line
-	5650 2700 5650 2550
+	6150 2100 6150 2050
 Text GLabel 5400 1300 1    50   Input ~ 0
 BUS
 $Comp
@@ -470,7 +451,7 @@ F 3 "" H 5400 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 3200 7100 3200
+	7300 2600 7350 2600
 Wire Wire Line
 	3350 1900 3150 1900
 Wire Wire Line
@@ -490,47 +471,130 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1350 44
 	1    1200 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1200 5300 1050 5300
 $Comp
 L power:GND #PWR053
 U 1 1 6101E2A9
-P 1050 5300
-F 0 "#PWR053" H 1050 5050 50  0001 C CNN
-F 1 "GND" H 1055 5127 50  0000 C CNN
-F 2 "" H 1050 5300 50  0001 C CNN
-F 3 "" H 1050 5300 50  0001 C CNN
-	1    1050 5300
+P 1050 5400
+F 0 "#PWR053" H 1050 5150 50  0001 C CNN
+F 1 "GND" H 1055 5227 50  0000 C CNN
+F 2 "" H 1050 5400 50  0001 C CNN
+F 3 "" H 1050 5400 50  0001 C CNN
+	1    1050 5400
 	1    0    0    -1  
 $EndComp
-Connection ~ 1050 5300
-Wire Wire Line
-	1050 5300 900  5300
 Text GLabel 1700 2150 0    50   Input ~ 0
 VIN
-Text GLabel 1800 3800 2    50   Input ~ 0
+Text GLabel 1850 3800 2    50   Input ~ 0
 VIN
-Wire Wire Line
-	1800 4300 1800 4400
-Wire Wire Line
-	1800 4500 1800 4600
-Text GLabel 1800 4350 2    50   Input ~ 0
+Text GLabel 1900 4350 2    50   Input ~ 0
 D-
-Text GLabel 1800 4550 2    50   Input ~ 0
+Text GLabel 1900 4550 2    50   Input ~ 0
 D+
 Wire Wire Line
-	6800 2800 6750 2800
+	7300 2200 7250 2200
 Wire Wire Line
-	6050 2700 6350 2700
+	6550 2100 6850 2100
 $Comp
 L Switch:SW_SPDT SW2
 U 1 1 60A4FBE3
-P 6550 2700
-F 0 "SW2" H 6550 2985 50  0000 C CNN
-F 1 "SW_SPDT" H 6550 2894 50  0000 C CNN
-F 2 "Hardware:SWINTCHFORBATTERY" H 6550 2700 50  0001 C CNN
-F 3 "~" H 6550 2700 50  0001 C CNN
-	1    6550 2700
+P 7050 2100
+F 0 "SW2" H 7050 2385 50  0000 C CNN
+F 1 "SW_SPDT" H 7050 2294 50  0000 C CNN
+F 2 "Hardware:SWINTCHFORBATTERY" H 7050 2100 50  0001 C CNN
+F 3 "~" H 7050 2100 50  0001 C CNN
+	1    7050 2100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1900 4350 1850 4350
+Wire Wire Line
+	1900 4550 1850 4550
+Wire Wire Line
+	1800 4300 1850 4300
+Wire Wire Line
+	1850 4300 1850 4350
+Wire Wire Line
+	1800 4400 1850 4400
+Wire Wire Line
+	1850 4400 1850 4350
+Connection ~ 1850 4350
+Wire Wire Line
+	1800 4500 1850 4500
+Wire Wire Line
+	1850 4500 1850 4550
+Wire Wire Line
+	1850 4550 1850 4600
+Wire Wire Line
+	1850 4600 1800 4600
+Connection ~ 1850 4550
+Wire Wire Line
+	1850 3800 1800 3800
+Wire Wire Line
+	1200 5300 1200 5350
+Wire Wire Line
+	1200 5350 1050 5350
+Wire Wire Line
+	900  5350 900  5300
+Wire Wire Line
+	1050 5400 1050 5350
+Connection ~ 1050 5350
+Wire Wire Line
+	1050 5350 900  5350
+Wire Wire Line
+	7350 2650 7350 2600
+Wire Wire Line
+	6150 2700 6150 2750
+Connection ~ 6150 2050
+Wire Wire Line
+	6150 2050 6150 1950
+Connection ~ 4650 3000
+Wire Wire Line
+	4650 3000 4650 2950
+$Comp
+L power:GND #PWR050
+U 1 1 60AE92D1
+P 4650 3950
+F 0 "#PWR050" H 4650 3700 50  0001 C CNN
+F 1 "GND" H 4655 3777 50  0000 C CNN
+F 2 "" H 4650 3950 50  0001 C CNN
+F 3 "" H 4650 3950 50  0001 C CNN
+	1    4650 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2550 4650 2550
+Wire Wire Line
+	4650 2550 4650 2650
+$Comp
+L Device:Thermistor_NTC TH1
+U 1 1 60AF0DC7
+P 4650 3700
+F 0 "TH1" H 4748 3746 50  0000 L CNN
+F 1 "Thermistor_NTC" H 4748 3655 50  0000 L CNN
+F 2 "" H 4650 3750 50  0001 C CNN
+F 3 "~" H 4650 3750 50  0001 C CNN
+	1    4650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R35
+U 1 1 60AF23C4
+P 4650 3250
+F 0 "R35" H 4720 3296 50  0000 L CNN
+F 1 "4.4K" H 4720 3205 50  0000 L CNN
+F 2 "" V 4580 3250 50  0001 C CNN
+F 3 "~" H 4650 3250 50  0001 C CNN
+	1    4650 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 2550 2    50   Input ~ 0
+BUS
+Wire Wire Line
+	4650 3850 4650 3950
+Wire Wire Line
+	4650 3400 4650 3550
+Text Notes 5450 3800 0    50   ~ 0
+NTC: LCSC C123378\nMogelijk exemplaar met beter datasheet uitzoeken
+Wire Wire Line
+	3600 3000 4650 3000
 $EndSCHEMATC
