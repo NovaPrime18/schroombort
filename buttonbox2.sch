@@ -33,10 +33,6 @@ Wire Wire Line
 Wire Wire Line
 	2600 1200 2600 1100
 Connection ~ 2600 1200
-Wire Wire Line
-	3350 2750 3300 2750
-Wire Wire Line
-	3300 2950 3350 2950
 $Comp
 L power:GND #PWR04
 U 1 1 5FD212C1
@@ -1426,4 +1422,124 @@ D+
 Wire Wire Line
 	1350 2100 1900 2100
 Connection ~ 750  2100
+$Comp
+L Device:Rotary_Encoder_Switch SW3
+U 1 1 60C1C70F
+P 4550 2950
+F 0 "SW3" H 4550 3317 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 4550 3226 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_CircularMountingHoles" H 4400 3110 50  0001 C CNN
+F 3 "~" H 4550 3210 50  0001 C CNN
+	1    4550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR054
+U 1 1 60CA26ED
+P 3950 2500
+F 0 "#PWR054" H 3950 2350 50  0001 C CNN
+F 1 "+3V3" H 3965 2673 50  0000 C CNN
+F 2 "" H 3950 2500 50  0001 C CNN
+F 3 "" H 3950 2500 50  0001 C CNN
+	1    3950 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR055
+U 1 1 60CA3341
+P 4150 2950
+F 0 "#PWR055" H 4150 2700 50  0001 C CNN
+F 1 "GND" H 4155 2777 50  0000 C CNN
+F 2 "" H 4150 2950 50  0001 C CNN
+F 3 "" H 4150 2950 50  0001 C CNN
+	1    4150 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2950 4150 2950
+$Comp
+L Device:R R37
+U 1 1 60CC5806
+P 3950 2700
+F 0 "R37" H 4020 2746 50  0000 L CNN
+F 1 "10K" H 4020 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3880 2700 50  0001 C CNN
+F 3 "~" H 3950 2700 50  0001 C CNN
+	1    3950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2850 4000 2850
+$Comp
+L Device:R R36
+U 1 1 60CFB51D
+P 3800 2700
+F 0 "R36" H 3870 2746 50  0000 R CNN
+F 1 "10K" H 3870 2655 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3730 2700 50  0001 C CNN
+F 3 "~" H 3800 2700 50  0001 C CNN
+	1    3800 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2550 3800 2500
+Wire Wire Line
+	3800 2500 3950 2500
+Wire Wire Line
+	3950 2550 3950 2500
+Connection ~ 3950 2500
+Wire Wire Line
+	4250 3050 4250 3200
+Wire Wire Line
+	4250 3200 3800 3200
+Wire Wire Line
+	3800 3200 3800 3050
+Wire Wire Line
+	4000 2850 4000 2950
+Wire Wire Line
+	4000 2950 3300 2950
+Connection ~ 4000 2850
+Wire Wire Line
+	4000 2850 4250 2850
+Wire Wire Line
+	3800 3050 3300 3050
+Connection ~ 3800 3050
+Wire Wire Line
+	3800 3050 3800 2850
+$Comp
+L power:+3V3 #PWR056
+U 1 1 60D421AA
+P 5100 2500
+F 0 "#PWR056" H 5100 2350 50  0001 C CNN
+F 1 "+3V3" H 5115 2673 50  0000 C CNN
+F 2 "" H 5100 2500 50  0001 C CNN
+F 3 "" H 5100 2500 50  0001 C CNN
+	1    5100 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2850 5100 2850
+Wire Wire Line
+	5100 2850 5100 2800
+Wire Wire Line
+	4900 3050 4900 3250
+Wire Wire Line
+	3700 3250 3700 3150
+Wire Wire Line
+	3700 3150 3300 3150
+Wire Wire Line
+	4850 3050 4900 3050
+Wire Wire Line
+	3700 3250 4900 3250
+$Comp
+L Device:R R38
+U 1 1 60D8FC06
+P 5100 2650
+F 0 "R38" H 5170 2696 50  0000 L CNN
+F 1 "10K" H 5170 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5030 2650 50  0001 C CNN
+F 3 "~" H 5100 2650 50  0001 C CNN
+	1    5100 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
