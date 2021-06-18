@@ -126,8 +126,6 @@ F 3 "~" H 4500 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3600 2150 4500 2150
-Wire Wire Line
 	3600 2700 3700 2700
 Wire Wire Line
 	3700 2700 3700 2800
@@ -267,7 +265,7 @@ F 3 "" H 3650 3400 50  0001 C CNN
 	1    3650 3400
 	1    0    0    -1  
 $EndComp
-Text GLabel 2600 2250 0    50   Input ~ 0
+Text GLabel 2500 2250 0    50   Input ~ 0
 SIN
 Text GLabel 4100 3100 2    50   Input ~ 0
 SIN
@@ -405,10 +403,9 @@ F 3 "~" H 5400 1450 50  0001 C CNN
 	1    5400 1450
 	1    0    0    -1  
 $EndComp
-Connection ~ 4500 2150
 Wire Wire Line
 	4500 2150 4650 2150
-Text GLabel 4850 2150 2    50   Input ~ 0
+Text GLabel 5150 2150 2    50   Input ~ 0
 SYS
 Wire Wire Line
 	4850 2150 4650 2150
@@ -437,7 +434,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 2150 1700 2200
 Wire Wire Line
-	1700 2150 2600 2150
+	1700 2150 2550 2150
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J3
 U 1 1 610152FB
@@ -618,4 +615,28 @@ Wire Wire Line
 Wire Wire Line
 	7800 2600 7350 2600
 Connection ~ 7350 2600
+Connection ~ 4500 2150
+$Comp
+L Device:R R40
+U 1 1 60EB421B
+P 5000 2150
+F 0 "R40" V 4793 2150 50  0000 C CNN
+F 1 "DNP" V 4884 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4930 2150 50  0001 C CNN
+F 3 "~" H 5000 2150 50  0001 C CNN
+	1    5000 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 2150 4500 2150
+Wire Wire Line
+	2600 2250 2550 2250
+Wire Wire Line
+	2550 2250 2550 2150
+Connection ~ 2550 2250
+Wire Wire Line
+	2550 2250 2500 2250
+Connection ~ 2550 2150
+Wire Wire Line
+	2550 2150 2600 2150
 $EndSCHEMATC

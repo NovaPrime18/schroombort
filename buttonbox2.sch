@@ -930,4 +930,70 @@ CLK
 Text GLabel 3300 3750 2    50   Input ~ 0
 STB
 NoConn ~ 3300 3450
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 60E727AA
+P 5150 4300
+F 0 "H4" H 5250 4349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5250 4258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 5150 4300 50  0001 C CNN
+F 3 "~" H 5150 4300 50  0001 C CNN
+	1    5150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 60E73BB2
+P 4950 4300
+F 0 "H3" H 5050 4349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5050 4258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 4950 4300 50  0001 C CNN
+F 3 "~" H 4950 4300 50  0001 C CNN
+	1    4950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 60E73E82
+P 4750 4300
+F 0 "H2" H 4850 4349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4850 4258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 4750 4300 50  0001 C CNN
+F 3 "~" H 4750 4300 50  0001 C CNN
+	1    4750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 60E7414C
+P 4550 4300
+F 0 "H1" H 4550 4587 50  0000 C CNN
+F 1 "MountingHole_Pad" H 4550 4496 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 4550 4300 50  0001 C CNN
+F 3 "~" H 4550 4300 50  0001 C CNN
+	1    4550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR048
+U 1 1 60E74449
+P 4850 4400
+F 0 "#PWR048" H 4850 4150 50  0001 C CNN
+F 1 "GND" H 4855 4227 50  0000 C CNN
+F 2 "" H 4850 4400 50  0001 C CNN
+F 3 "" H 4850 4400 50  0001 C CNN
+	1    4850 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4400 4750 4400
+Connection ~ 4750 4400
+Wire Wire Line
+	4750 4400 4850 4400
+Connection ~ 4850 4400
+Wire Wire Line
+	4850 4400 4950 4400
+Connection ~ 4950 4400
+Wire Wire Line
+	4950 4400 5150 4400
 $EndSCHEMATC
