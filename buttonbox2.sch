@@ -95,18 +95,10 @@ Wire Wire Line
 	6850 1050 6850 1100
 Wire Wire Line
 	6850 1400 6850 1450
-Text GLabel 3300 3750 2    50   Input ~ 0
-LED
 Text GLabel 3300 3650 2    50   Input ~ 0
 TX
-Wire Wire Line
-	3350 2550 3300 2550
-Wire Wire Line
-	3350 2450 3300 2450
 Text GLabel 3300 3550 2    50   Input ~ 0
 RX
-Wire Wire Line
-	3300 2650 3350 2650
 Text GLabel 1900 4350 0    50   Input ~ 0
 BUSY
 $Comp
@@ -332,10 +324,6 @@ Text Notes 6250 1700 0    89   ~ 0
 Decoupling
 Text Notes 2400 3200 0    89   ~ 0
 MCU
-Wire Wire Line
-	2600 5100 2600 4850
-Wire Wire Line
-	1900 1950 1900 2100
 $Comp
 L power:GND #PWR019
 U 1 1 60046562
@@ -572,17 +560,6 @@ F 3 "" H 6050 1000 50  0001 C CNN
 	1    6050 1000
 	1    0    0    -1  
 $EndComp
-$Comp
-L MCU_Microchip_ATmega:ATxmega256A3-AU U1
-U 1 1 619EAF40
-P 2600 3050
-F 0 "U1" H 2600 1161 50  0000 C CNN
-F 1 "ATxmega256A3-AU" H 2600 1070 50  0000 C CNN
-F 2 "Package_QFP:TQFP-64_14x14mm_P0.8mm" H 2600 3050 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8068-8-and16-bit-AVR-XMEGA-A3-Microcontrollers_Datasheet.pdf" H 2600 3050 50  0001 C CNN
-	1    2600 3050
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 5500 6800 650  750 
 U 60BEA0ED
@@ -667,42 +644,36 @@ $EndSheet
 $Comp
 L Switch:SW_SP3T SW1
 U 1 1 60FDF2D6
-P 3600 3950
-F 0 "SW1" H 3600 3625 50  0000 C CNN
-F 1 "SW_SP3T" H 3600 3716 50  0000 C CNN
-F 2 "Hardware:schakelaar" H 2975 4125 50  0001 C CNN
-F 3 "~" H 2975 4125 50  0001 C CNN
-	1    3600 3950
+P 3500 1750
+F 0 "SW1" H 3500 1425 50  0000 C CNN
+F 1 "SW_SP3T" H 3500 1516 50  0000 C CNN
+F 2 "Hardware:schakelaar" H 2875 1925 50  0001 C CNN
+F 3 "~" H 2875 1925 50  0001 C CNN
+	1    3500 1750
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3300 4050 3400 4050
-Wire Wire Line
-	3300 3950 3400 3950
-Wire Wire Line
-	3300 3850 3400 3850
 $Comp
 L Device:R R29
 U 1 1 61000DFD
-P 3900 3800
-F 0 "R29" H 3970 3846 50  0000 L CNN
-F 1 "10K" H 3970 3755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3830 3800 50  0001 C CNN
-F 3 "~" H 3900 3800 50  0001 C CNN
-	1    3900 3800
+P 3800 1600
+F 0 "R29" H 3870 1646 50  0000 L CNN
+F 1 "10K" H 3870 1555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3730 1600 50  0001 C CNN
+F 3 "~" H 3800 1600 50  0001 C CNN
+	1    3800 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 3950 3900 3950
+	3700 1750 3800 1750
 $Comp
 L power:+3.3V #PWR051
 U 1 1 6100C306
-P 3900 3650
-F 0 "#PWR051" H 3900 3500 50  0001 C CNN
-F 1 "+3.3V" H 3915 3823 50  0000 C CNN
-F 2 "" H 3900 3650 50  0001 C CNN
-F 3 "" H 3900 3650 50  0001 C CNN
-	1    3900 3650
+P 3800 1450
+F 0 "#PWR051" H 3800 1300 50  0001 C CNN
+F 1 "+3.3V" H 3815 1623 50  0000 C CNN
+F 2 "" H 3800 1450 50  0001 C CNN
+F 3 "" H 3800 1450 50  0001 C CNN
+	1    3800 1450
 	1    0    0    -1  
 $EndComp
 Text GLabel 1900 4450 0    50   Input ~ 0
@@ -919,4 +890,44 @@ $EndComp
 Connection ~ 4850 3250
 Wire Wire Line
 	4850 3250 4900 3250
+NoConn ~ 3350 4250
+NoConn ~ 3350 4350
+NoConn ~ 1900 3950
+NoConn ~ 1900 4050
+NoConn ~ 1900 3050
+NoConn ~ 1900 3150
+Wire Wire Line
+	2600 5100 2600 4850
+Wire Wire Line
+	1900 1950 1900 2100
+$Comp
+L MCU_Microchip_ATmega:ATxmega256A3-AU U1
+U 1 1 619EAF40
+P 2600 3050
+F 0 "U1" H 2600 1161 50  0000 C CNN
+F 1 "ATxmega256A3-AU" H 2600 1070 50  0000 C CNN
+F 2 "Package_QFP:TQFP-64_14x14mm_P0.8mm" H 2600 3050 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8068-8-and16-bit-AVR-XMEGA-A3-Microcontrollers_Datasheet.pdf" H 2600 3050 50  0001 C CNN
+	1    2600 3050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3300 2450
+NoConn ~ 3300 2550
+NoConn ~ 3300 2650
+NoConn ~ 3300 2750
+NoConn ~ 3300 2850
+NoConn ~ 3300 2250
+NoConn ~ 3300 2150
+NoConn ~ 3300 2050
+NoConn ~ 3300 1950
+NoConn ~ 3300 1550
+Text GLabel 3300 3850 2    50   Input ~ 0
+DIN
+Text GLabel 3300 3950 2    50   Input ~ 0
+DOUT
+Text GLabel 3300 4050 2    50   Input ~ 0
+CLK
+Text GLabel 3300 3750 2    50   Input ~ 0
+STB
+NoConn ~ 3300 3450
 $EndSCHEMATC

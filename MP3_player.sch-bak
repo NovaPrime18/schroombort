@@ -201,8 +201,6 @@ Wire Wire Line
 	9150 2300 9100 2300
 Text HLabel 9100 2200 0    50   Input ~ 0
 SD_CMD
-Text HLabel 9100 2600 0    50   Input ~ 0
-SD_DAT
 Wire Wire Line
 	9150 2600 9100 2600
 $Comp
@@ -255,8 +253,6 @@ Text HLabel 8350 2350 0    50   Input ~ 0
 3V3OUT
 Wire Wire Line
 	8350 2350 8350 2400
-Text HLabel 7800 2400 2    50   Input ~ 0
-SD_DAT
 Text HLabel 7800 2500 2    50   Input ~ 0
 SD_CMD
 Text HLabel 7800 2600 2    50   Input ~ 0
@@ -1084,34 +1080,16 @@ F 3 "" H 4850 1750 50  0001 C CNN
 	1    4850 1750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:AudioJack3_Ground J1
-U 1 1 60FC2F5F
-P 10600 5000
-F 0 "J1" H 10582 5325 50  0000 C CNN
-F 1 "AudioJack3_Ground" H 10582 5234 50  0000 C CNN
-F 2 "" H 10600 5000 50  0001 C CNN
-F 3 "~" H 10600 5000 50  0001 C CNN
-	1    10600 5000
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR052
-U 1 1 60FC4CF9
-P 10700 4550
-AR Path="/5FE0503C/60FC4CF9" Ref="#PWR052"  Part="1" 
-AR Path="/60BB8BC4/60FC4CF9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR052" H 10700 4300 50  0001 C CNN
-F 1 "GND" H 10705 4377 50  0000 C CNN
-F 2 "" H 10700 4550 50  0001 C CNN
-F 3 "" H 10700 4550 50  0001 C CNN
-	1    10700 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10600 4700 10600 4450
-Wire Wire Line
-	10600 4450 10700 4450
-Wire Wire Line
-	10700 4450 10700 4550
+NoConn ~ 9150 2000
+NoConn ~ 9150 2100
+NoConn ~ 9150 2700
+NoConn ~ 7750 2900
+NoConn ~ 7750 3000
+NoConn ~ 6850 2600
+NoConn ~ 6850 2700
+NoConn ~ 6850 2800
+Text HLabel 9100 2600 0    50   Input ~ 0
+SD_DAT
+Text HLabel 7800 2400 2    50   Input ~ 0
+SD_DAT
 $EndSCHEMATC

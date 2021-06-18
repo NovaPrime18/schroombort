@@ -183,7 +183,7 @@ F 3 "~" H 2600 3600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3750 2400 4000 2400
+	3750 2400 3850 2400
 Wire Wire Line
 	3750 2800 4000 2800
 Wire Wire Line
@@ -330,14 +330,6 @@ Wire Wire Line
 Wire Wire Line
 	8800 4200 8800 2150
 Wire Wire Line
-	4000 4200 3900 4200
-Wire Wire Line
-	4000 4300 3700 4300
-Wire Wire Line
-	3700 4400 4000 4400
-Wire Wire Line
-	4000 4500 3700 4500
-Wire Wire Line
 	3750 5100 4000 5100
 Wire Wire Line
 	3750 5100 3750 5200
@@ -350,19 +342,6 @@ F 1 "GND" H 3755 5027 50  0000 C CNN
 F 2 "" H 3750 5200 50  0001 C CNN
 F 3 "" H 3750 5200 50  0001 C CNN
 	1    3750 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 4600 3800 4600
-$Comp
-L power:+5V #PWR048
-U 1 1 5F71F7BB
-P 3800 4600
-F 0 "#PWR048" H 3800 4450 50  0001 C CNN
-F 1 "+5V" H 3815 4773 50  0000 C CNN
-F 2 "" H 3800 4600 50  0001 C CNN
-F 3 "" H 3800 4600 50  0001 C CNN
-	1    3800 4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -512,19 +491,8 @@ F 3 "" H 2400 5100 50  0001 C CNN
 	1    2400 5100
 	1    0    0    -1  
 $EndComp
-Text HLabel 2350 5550 0    50   Input ~ 0
-DOUT
-Text HLabel 3900 4150 0    50   Input ~ 0
-DOUT
-Wire Wire Line
-	3900 4150 3900 4200
-Connection ~ 3900 4200
-Wire Wire Line
-	3900 4200 3700 4200
 Wire Wire Line
 	2400 5500 2400 5550
-Wire Wire Line
-	2400 5550 2350 5550
 Wire Wire Line
 	6400 3150 6700 3150
 Wire Wire Line
@@ -554,7 +522,42 @@ Wire Wire Line
 Wire Wire Line
 	6400 2150 6400 3450
 Wire Wire Line
-	4000 2400 4000 2600
+	4000 2400 4000 2500
 Wire Wire Line
 	2250 2400 3750 2400
+NoConn ~ 9000 2150
+NoConn ~ 8900 2150
+NoConn ~ 6000 2150
+NoConn ~ 6100 2150
+NoConn ~ 5350 3750
+NoConn ~ 5350 3850
+NoConn ~ 5350 5500
+NoConn ~ 5350 5600
+NoConn ~ 5350 5700
+NoConn ~ 5350 5800
+NoConn ~ 4000 3000
+NoConn ~ 4000 3100
+NoConn ~ 4000 3200
+NoConn ~ 4000 3300
+NoConn ~ 4000 4000
+Text GLabel 4000 4200 0    50   Input ~ 0
+DOUT
+Text GLabel 4000 4300 0    50   Input ~ 0
+DIN
+Text GLabel 4000 4400 0    50   Input ~ 0
+CLK
+Text GLabel 4000 4500 0    50   Input ~ 0
+STB
+Wire Wire Line
+	4000 2500 3850 2500
+Wire Wire Line
+	3850 2500 3850 2400
+Connection ~ 4000 2500
+Wire Wire Line
+	4000 2500 4000 2600
+Connection ~ 3850 2400
+Wire Wire Line
+	3850 2400 4000 2400
+Text GLabel 2400 5550 2    50   Input ~ 0
+DOUT
 $EndSCHEMATC
