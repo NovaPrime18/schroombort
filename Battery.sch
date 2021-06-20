@@ -639,4 +639,107 @@ Wire Wire Line
 Connection ~ 2550 2150
 Wire Wire Line
 	2550 2150 2600 2150
+Text GLabel 2600 2450 0    50   Input ~ 0
+STAT
+$Comp
+L Device:R R5
+U 1 1 60F62CCC
+P 950 2400
+F 0 "R5" V 743 2400 50  0000 C CNN
+F 1 "10K" V 834 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 880 2400 50  0001 C CNN
+F 3 "~" H 950 2400 50  0001 C CNN
+	1    950  2400
+	-1   0    0    1   
+$EndComp
+Text GLabel 900  2650 0    50   Input ~ 0
+STAT
+$Comp
+L power:+3.3V #PWR052
+U 1 1 60F66E10
+P 950 2250
+F 0 "#PWR052" H 950 2100 50  0001 C CNN
+F 1 "+3.3V" H 965 2423 50  0000 C CNN
+F 2 "" H 950 2250 50  0001 C CNN
+F 3 "" H 950 2250 50  0001 C CNN
+	1    950  2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  2650 950  2550
+Wire Wire Line
+	950  2650 900  2650
+$Comp
+L Power_Protection:SP0502BAHT D?
+U 1 1 60FB69FA
+P 2550 4750
+AR Path="/60FB69FA" Ref="D?"  Part="1" 
+AR Path="/60BEA0ED/60FB69FA" Ref="D47"  Part="1" 
+F 0 "D47" V 2892 4750 50  0000 C CNN
+F 1 "SP0502BAHT" V 2801 4750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2775 4700 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 2675 4875 50  0001 C CNN
+	1    2550 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FB6A00
+P 2750 4750
+AR Path="/60FB6A00" Ref="#PWR?"  Part="1" 
+AR Path="/60BEA0ED/60FB6A00" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 2750 4500 50  0001 C CNN
+F 1 "GND" H 2755 4577 50  0000 C CNN
+F 2 "" H 2750 4750 50  0001 C CNN
+F 3 "" H 2750 4750 50  0001 C CNN
+	1    2750 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 2350 4650 0    50   Input ~ 0
+D-
+Text GLabel 2350 4850 0    50   Input ~ 0
+D+
+$Comp
+L Device:R Ren1
+U 1 1 60FB85C6
+P 3100 3400
+F 0 "Ren1" H 3170 3446 50  0000 L CNN
+F 1 "DNP" H 3170 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3030 3400 50  0001 C CNN
+F 3 "~" H 3100 3400 50  0001 C CNN
+	1    3100 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R Ren2
+U 1 1 60FBABF3
+P 3200 3400
+F 0 "Ren2" H 3270 3446 50  0000 L CNN
+F 1 "DNP" H 3270 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3130 3400 50  0001 C CNN
+F 3 "~" H 3200 3400 50  0001 C CNN
+	1    3200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 60FBB085
+P 3150 3550
+F 0 "#PWR0119" H 3150 3300 50  0001 C CNN
+F 1 "GND" H 3155 3377 50  0000 C CNN
+F 2 "" H 3150 3550 50  0001 C CNN
+F 3 "" H 3150 3550 50  0001 C CNN
+	1    3150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3550 3150 3550
+Connection ~ 3150 3550
+Wire Wire Line
+	3150 3550 3200 3550
+NoConn ~ 2950 3250
+NoConn ~ 1800 4000
+NoConn ~ 1800 4100
+NoConn ~ 1800 4900
+NoConn ~ 1800 5000
 $EndSCHEMATC

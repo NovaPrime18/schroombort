@@ -1,4 +1,4 @@
-update=6/18/2021 11:16:24 PM
+update=6/20/2021 9:26:18 PM
 version=1
 last_client=kicad
 [general]
@@ -32,12 +32,13 @@ TrackWidth1=0.25
 TrackWidth2=0.2
 TrackWidth3=0.3
 TrackWidth4=0.4
-TrackWidth5=0.6
-TrackWidth6=0.8
-TrackWidth7=1
-TrackWidth8=1.25
-TrackWidth9=1.5
-TrackWidth10=2
+TrackWidth5=0.5
+TrackWidth6=0.6
+TrackWidth7=0.8
+TrackWidth8=1
+TrackWidth9=1.25
+TrackWidth10=1.5
+TrackWidth11=2
 ViaDiameter1=0.8
 ViaDrill1=0.4
 ViaDiameter2=0.4
@@ -78,8 +79,8 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-SolderMaskClearance=0.051
-SolderMaskMinWidth=0.25
+SolderMaskClearance=0
+SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]

@@ -29,20 +29,6 @@ F 3 "" H 4650 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3750 2300 3750 2400
-$Comp
-L power:+5V #PWR?
-U 1 1 5F3F0EFB
-P 3750 2300
-AR Path="/5F3F0EFB" Ref="#PWR?"  Part="1" 
-AR Path="/5F3F0D8E/5F3F0EFB" Ref="#PWR07"  Part="1" 
-AR Path="/60E90241/5F3F0EFB" Ref="#PWR046"  Part="1" 
-F 0 "#PWR046" H 3750 2150 50  0001 C CNN
-F 1 "+5V" H 3765 2473 50  0000 C CNN
-F 2 "" H 3750 2300 50  0001 C CNN
-F 3 "" H 3750 2300 50  0001 C CNN
-	1    3750 2300
-	1    0    0    -1  
-$EndComp
 Text GLabel 5400 2350 2    50   Input ~ 0
 VEE
 Wire Wire Line
@@ -98,7 +84,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 2150 9200 2200
 Wire Wire Line
-	9200 2200 9300 2200
+	9200 2200 9250 2200
 Text GLabel 9300 2200 2    50   Input ~ 0
 FIL+
 Wire Wire Line
@@ -467,32 +453,18 @@ Wire Wire Line
 $Comp
 L Device:R R34
 U 1 1 5F4F75CE
-P 2400 5350
-F 0 "R34" H 2470 5396 50  0000 L CNN
-F 1 "10K" H 2470 5305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2330 5350 50  0001 C CNN
-F 3 "~" H 2400 5350 50  0001 C CNN
-	1    2400 5350
+P 3150 4650
+F 0 "R34" H 3220 4696 50  0000 L CNN
+F 1 "10K" H 3220 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3080 4650 50  0001 C CNN
+F 3 "~" H 3150 4650 50  0001 C CNN
+	1    3150 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 5100 2400 5200
-$Comp
-L power:+5V #PWR?
-U 1 1 5F4F7CB7
-P 2400 5100
-AR Path="/5F4F7CB7" Ref="#PWR?"  Part="1" 
-AR Path="/5F3F0D8E/5F4F7CB7" Ref="#PWR016"  Part="1" 
-AR Path="/60E90241/5F4F7CB7" Ref="#PWR045"  Part="1" 
-F 0 "#PWR045" H 2400 4950 50  0001 C CNN
-F 1 "+5V" H 2415 5273 50  0000 C CNN
-F 2 "" H 2400 5100 50  0001 C CNN
-F 3 "" H 2400 5100 50  0001 C CNN
-	1    2400 5100
-	1    0    0    -1  
-$EndComp
+	3150 4400 3150 4500
 Wire Wire Line
-	2400 5500 2400 5550
+	3150 4800 3150 4850
 Wire Wire Line
 	6400 3150 6700 3150
 Wire Wire Line
@@ -558,6 +530,54 @@ Wire Wire Line
 Connection ~ 3850 2400
 Wire Wire Line
 	3850 2400 4000 2400
-Text GLabel 2400 5550 2    50   Input ~ 0
+Text GLabel 3150 4850 2    50   Input ~ 0
 DOUT
+$Comp
+L Connector:TestPoint TP4
+U 1 1 60DFCA85
+P 9250 2200
+F 0 "TP4" H 9308 2320 50  0000 L CNN
+F 1 "TestPoint" H 9308 2229 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 9450 2200 50  0001 C CNN
+F 3 "~" H 9450 2200 50  0001 C CNN
+	1    9250 2200
+	-1   0    0    1   
+$EndComp
+Connection ~ 9250 2200
+Wire Wire Line
+	9250 2200 9300 2200
+$Comp
+L Connector:TestPoint TP3
+U 1 1 60DFD783
+P 5800 2200
+F 0 "TP3" H 5858 2320 50  0000 L CNN
+F 1 "TestPoint" H 5858 2229 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6000 2200 50  0001 C CNN
+F 3 "~" H 6000 2200 50  0001 C CNN
+	1    5800 2200
+	-1   0    0    1   
+$EndComp
+Connection ~ 5800 2200
+$Comp
+L power:+3.3V #PWR045
+U 1 1 60E5680F
+P 3150 4400
+F 0 "#PWR045" H 3150 4250 50  0001 C CNN
+F 1 "+3.3V" H 3165 4573 50  0000 C CNN
+F 2 "" H 3150 4400 50  0001 C CNN
+F 3 "" H 3150 4400 50  0001 C CNN
+	1    3150 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR046
+U 1 1 60E5728D
+P 3750 2300
+F 0 "#PWR046" H 3750 2150 50  0001 C CNN
+F 1 "+3.3V" H 3765 2473 50  0000 C CNN
+F 2 "" H 3750 2300 50  0001 C CNN
+F 3 "" H 3750 2300 50  0001 C CNN
+	1    3750 2300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
