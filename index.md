@@ -1,29 +1,24 @@
-## Welcome to GitHub Pages
+## Hardware Schroombort
+This is a hardware soundboard, built from the ground up for playing dumb sounds
 
-You can use the [editor on GitHub](https://github.com/NovaPrime18/schroombort/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Features
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
+- **USB type C**
+- **VFD screen**
+- 36 programmable buttons
+- 3 distinct modes
+- MACRO mode, for using with your PC
+- Calculator mode, calculating all your 6+5's
+- Soundboard mode, for playing all the sounds!
+- 10 Watt charging!
+- Rotary encoder for brightness, volume, whatever you want!
 
 1. Numbered
 2. List
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+![Image](src)
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
