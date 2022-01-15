@@ -1,4 +1,4 @@
-## An over-engineerd hardware soundboard, built from the ground up for playing dumb sounds
+## Hardware Schroombort
 
 ### Features
 
