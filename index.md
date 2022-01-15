@@ -13,4 +13,4 @@
 - Rotary encoder for brightness, volume, whatever you want!
 
 ![Image](
-2021-12-22_12-32.png)
+IMG_20210705_230837.jpg)
