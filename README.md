@@ -1,3 +1,6 @@
+[![License: CERN-OHL-S v2.0](https://img.shields.io/badge/License-CERN--OHL--S%20v2.0-blue.svg)](https://ohwr.org/cern_ohl_s_v2.txt)
+[![KiCad](https://img.shields.io/badge/Made%20with-KiCad-blue)](https://www.kicad.org/)
+
 Battery powered soundboard with 36 mechanical buttons and up to 3 different configurations. 
 
 
