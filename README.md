@@ -17,7 +17,7 @@ Press a button, hear a dumb sound. Then find out it's also a macro-pad. And a ca
 
 ---
 
-## 📸 Gallery
+## Renders
 
 <div align="center">
 <table>
@@ -34,7 +34,7 @@ Press a button, hear a dumb sound. Then find out it's also a macro-pad. And a ca
 
 ---
 
-## 🧠 What is it?
+## What is it..?
 
 Schroombort is a battery-powered soundboard built around **36 mechanical (Cherry MX‑style) switches**, a **Vacuum Fluorescent Display**, and stereo speakers — designed to do way more than it needs to. It runs in one of three configurations, switchable depending on how you're using it.
 
@@ -42,11 +42,11 @@ Schroombort is a battery-powered soundboard built around **36 mechanical (Cherry
 
 | Mode | Description |
 |------|-------------|
-| 🔊 **Soundboard** | Press a button, and a sound is played straight from the SD card. |
-| ⌨️ **Macro-pad** | Plug it into your computer over USB‑C and assign each of the 36 buttons to a custom macro. |
-| 🧮 **Calculator** | Flip it into a fully functional basic calculator. |
+| **Soundboard** | Press a button, and a sound is played straight from the SD card. |
+| **Macro-pad** | Plug it into your computer over USB‑C and assign each of the 36 buttons to a custom macro. |
+| **Calculator** | Flip it into a fully functional basic calculator. |
 
-## 🛠️ Specs
+## Specs
 
 | Category | Detail |
 |---|---|
@@ -58,7 +58,7 @@ Schroombort is a battery-powered soundboard built around **36 mechanical (Cherry
 | **Display** | Vacuum Fluorescent Display (VFD) |
 | **Connectivity** | USB-C |
 
-## 📁 Repository structure
+## Repository structure
 
 ```
 schroombort/
@@ -68,13 +68,13 @@ schroombort/
 └── LICENSE                        # CERN-OHL-S v2.0
 ```
 
-## 🎬 Cinematic trailer
+## Cinematic trailer
 
 Because a README alone can't do it justice:
 
 **[▶ https://www.youtube.com/watch?v=MM4cooladaY](https://www.youtube.com/watch?v=MM4cooladaY)**
 
-## 📜 License
+## License
 
 This project is open hardware, licensed under the **[CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S v2.0)](https://ohwr.org/cern_ohl_s_v2.txt)**.
 
@@ -83,5 +83,5 @@ Any modified versions of the hardware distributed must remain under the same lic
 ---
 
 <div align="center">
-<sub>Built with too much love for a device whose main job is playing dumb sounds. 🍄</sub>
+<sub>Built with too much love for a device whose main job is playing dumb sounds.</sub>
 </div>
