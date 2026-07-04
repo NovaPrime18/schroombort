@@ -24,11 +24,9 @@ Press a button, hear a dumb sound. Then find out it's also a macro-pad. And a ca
 <tr>
 <td align="center" width="50%">
 <img src="Pictures/SchroombortRENDER.png" alt="Schroombort 3D render" width="100%"><br>
-<sub><b>3D render</b></sub>
 </td>
 <td align="center" width="50%">
 <img src="Pictures/schrromfoto.png" alt="Schroombort real-life photo" width="100%"><br>
-<sub><b>The real thing</b></sub>
 </td>
 </tr>
 </table>
